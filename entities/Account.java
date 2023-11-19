@@ -23,7 +23,7 @@ public class Account {
     }
 
     public void withdraw(double amount) {
-        balance -= amount;
+        balance -= amount -5; // 5 de taxa
     }
 
     public int getNumber() {
