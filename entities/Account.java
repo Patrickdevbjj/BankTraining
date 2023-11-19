@@ -21,4 +21,25 @@ public class Account {
     public void deposit(double amount) {
         this.balance += amount;
     }
+
+    public int getNumber() {
+        return number;
+    }
+
+    
+
+    public String getHolder() {
+        return holder;
+    }
+
+    public void setHolder(String holder) {
+        this.holder = holder;
+    }
+
+    public double getBalance() {
+        return balance;
+    }
+
+
+    
 }
