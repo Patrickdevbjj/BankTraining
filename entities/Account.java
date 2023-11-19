@@ -22,6 +22,10 @@ public class Account {
         this.balance += amount;
     }
 
+    public void withdraw(double amount) {
+        balance -= amount;
+    }
+
     public int getNumber() {
         return number;
     }
@@ -40,6 +44,12 @@ public class Account {
         return balance;
     }
 
-
-    
+    public String toString() {
+        return "Account :"
+        + number
+        + ", Holder :"
+        + holder
+        + ", Balance: $ "
+        + String.format("%.2f", balance);
+    }
 }
